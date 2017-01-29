@@ -1,0 +1,31 @@
+<template name="positionDetails">
+    <div>Position Details</div>
+    <div>{{stock}}</div>
+
+    <div>
+        <div class="row">
+            <div class="col-md-1">Type</div>
+            <div class="col-md-1">Direction</div>
+            <div class="col-md-1">Strike Price</div>
+            <div class="col-md-1">Expiration</div>
+            <div class="col-md-1">Entry Cost</div>
+            <div class="col-md-1">Current Cost</div>
+            <div class="col-md-1">ROI</div>
+        </div>
+        {{#each legs}}
+          {{> legItem}}
+        {{/each}}
+    </div>
+    <div>
+        <a href="{{pathFor 'legNew' _id=_id}}">+ New Leg</a>
+    </div>
+    <div>
+        <a href="#" class="btn btn-default">Update All</a>
+    </div>
+    <div>
+        <a href="#" class="btn btn-default">Close Position</a>
+    </div>
+    <div>
+        <a href="{{pathFor 'positionsList'}}" class="btn btn-default">Back</a>
+    </div>
+</template>

@@ -1,0 +1,22 @@
+<template name="positionsList">
+  <div>
+    My Positions
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-md-1">Stock</div>
+      <div class="col-md-1">Expiration</div>
+      <div class="col-md-2">Entry Price</div>
+      <div class="col-md-2">Current Value</div>
+      <div class="col-md-1">ROI</div>
+    </div>
+    <div class="row">
+      {{#each positions}}
+        {{> positionItem}}
+      {{/each}}
+    </div>
+  </div>
+  <div>
+    <a href="{{pathFor 'positionNew'}}">+ New Position</a>
+  </div>
+</template>

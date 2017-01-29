@@ -1,0 +1,31 @@
+<template name="legDetails">
+    <div>Leg Details</div>
+    <div>{{stock}}</div>
+
+    <div>
+      <dl class="dl-horizontal">
+          <dt>Type</dt>
+          <dd>{{type}}</dd>
+          <dt>Direction</dt>
+          <dd>{{direction}}</dd>
+          <dt>Strike Price</dt>
+          <dd>{{strikePrice}}</dd>
+          <dt>Expiration</dt>
+          <dd>{{expiration}}</dd>
+          <dt>Entry Value</dt>
+          <dd>{{entryValue}}</dd>
+          <dt>Current Value</dt>
+          <dd>{{currentValue}}</dd>
+          <dt>ROI</dt>
+          <dd>{{roi}}</dd>
+          <dt>Entry Date</dt>
+          <dd>{{entryDate}}</dd>
+      </dl>
+  </div>
+
+    <div>
+        <a href="#" class="btn btn-default">Update Leg</a>
+        <a href="#" class="btn btn-default">Close Leg</a>
+        <a href="{{pathFor 'positionDetails' _id=positionId}}" class="btn btn-default">Back</a>
+    </div>
+</template>

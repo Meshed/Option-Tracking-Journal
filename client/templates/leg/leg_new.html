@@ -1,0 +1,28 @@
+<template name="legNew">
+  <div>New Leg</div>
+  <div>{{stock}}</div>
+
+  <form>
+    <div class="form-group">
+      <label for="optionType">Option Type</label>
+      <input type="text" name="optionType" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="optionDirection">Option Direction</label>
+      <input type="text" name="optionDirection" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="entryPrice">Entry Price</label>
+      <input type="number" name="entryPrice" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="entryDate">Entry Date</label>
+      <input type="date" name="entryDate" class="form-control"/>
+    </div>
+
+    <div>
+      <input type="submit" value="Save" class="btn btn-primary" />
+      <a href="{{pathFor 'positionDetails' _id=_id}}" class="btn btn-default">Cancel</a>
+    </div>
+  </form>
+</template>

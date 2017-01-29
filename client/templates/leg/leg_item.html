@@ -1,0 +1,12 @@
+<template name="legItem">
+    <div class="row">
+        <div class="col-md-1">{{type}}</div>
+        <div class="col-md-1">{{direction}}</div>
+        <div class="col-md-1">{{strikePrice}}</div>
+        <div class="col-md-1">{{expiration}}</div>
+        <div class="col-md-1">{{entryPrice}}</div>
+        <div class="col-md-1">{{currentValue}}</div>
+        <div class="col-md-1">{{roi}}</div>
+        <div class="col-md-1"><a href="{{pathFor 'legDetails' _id=_id}}">View</a></div>
+    </div>
+</template>

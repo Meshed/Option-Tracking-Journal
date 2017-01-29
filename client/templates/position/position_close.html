@@ -1,0 +1,16 @@
+<template name="positionClose">
+    <div>Close Position</div>
+    <div>{{stock}}</div>
+
+    <div>
+        <div>Entry Date</div>
+        <div><input type="date" name="entryDate"></div>
+        <div>Closing Stock Price (Optional)</div>
+        <div><input type="number" name="closingPrice"></div>
+    </div>
+
+    <div>
+        <a href="#" class="btn btn-default">Save</a>
+        <a href="{{pathFor 'positionDetails'}}" class="btn btn-default">Cancel</a>
+    </div>
+</template>
